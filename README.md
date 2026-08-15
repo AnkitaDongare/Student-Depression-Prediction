@@ -127,6 +127,6 @@ The original notebook currently contains a local Windows path, so this change is
 
 ## 👩‍💻 Author
 
-**Arpita Dongare**
+**Ankita Dongare**
 
 Student Depression Prediction — Machine Learning Project
