@@ -1,49 +1,28 @@
 # Student Depression Prediction Using Machine Learning
 
-This project focuses on predicting depression among students using machine learning techniques. The model analyzes various academic, lifestyle, financial, and mental-health-related factors to predict whether a student may be experiencing depression.
+## 📌 Project Overview
 
-## Technologies Used
+This project uses machine learning classification algorithms to predict depression among students based on academic, lifestyle, financial, and mental-health-related factors.
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Machine Learning
+The project includes data preprocessing, exploratory data analysis (EDA), feature encoding/transformation, train-test splitting, training of multiple classification algorithms, and comparison of their performance.
 
-## Machine Learning Models
+> **Important:** This project is for educational/research purposes only. It is not a medical diagnosis or a substitute for professional mental-health assessment.
 
-The project evaluates multiple classification algorithms, including:
+## 📂 Files in this Repository
 
-- Support Vector Classifier (SVC)
-- Gaussian Naive Bayes
-- Decision Tree
-- K-Nearest Neighbors
-- Random Forest
-- AdaBoost
-- Gradient Boosting
-- Bagging Classifier
+- `student_depression_prediction.ipynb` — Jupyter Notebook containing the complete data analysis, preprocessing, model training, and evaluation workflow.
+- `Student_Depression_Dataset.csv` — Dataset used by the notebook.
+- `requirements.txt` — Python libraries required to run the notebook.
+- `.gitignore` — Files/folders that should not be committed to Git.
 
-## Project Workflow
+## 📊 Dataset
 
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis
-4. Data Preprocessing
-5. Feature Encoding
-6. Train-Test Split
-7. Model Training
-8. Model Evaluation
-9. Best Model Selection
-10. Depression Prediction
-
-## Dataset Features
-
-The prediction is based on factors such as:
+The dataset contains **27,901 records and 18 columns**, including:
 
 - Gender
 - Age
+- City
+- Profession
 - Academic Pressure
 - Work Pressure
 - CGPA
@@ -52,17 +31,102 @@ The prediction is based on factors such as:
 - Sleep Duration
 - Dietary Habits
 - Degree
-- Suicidal Thoughts
+- Have you ever had suicidal thoughts?
 - Work/Study Hours
 - Financial Stress
 - Family History of Mental Illness
+- Depression
 
-## Results
+## 🔄 Project Workflow
 
-Multiple machine learning algorithms were compared based on their accuracy and classification performance. Gradient Boosting achieved the highest accuracy among the tested models in the current implementation.
+1. Data Loading
+2. Data Understanding
+3. Data Cleaning
+4. Exploratory Data Analysis
+5. Categorical Feature Encoding
+6. Data Transformation
+7. Train-Test Split
+8. Machine Learning Model Training
+9. Model Evaluation
+10. Model Comparison
 
-## Purpose
+## 🤖 Machine Learning Algorithms
 
-The purpose of this project is to demonstrate how machine learning can be applied to identify potential depression-related patterns among students and provide an early prediction based on the available input factors.
+The notebook evaluates multiple classification algorithms:
 
+- Support Vector Classifier (SVC)
+- Gaussian Naive Bayes
+- Decision Tree Classifier
+- K-Nearest Neighbors
+- Random Forest Classifier
+- AdaBoost Classifier
+- Gradient Boosting Classifier
+- Bagging Classifier
 
+## 📈 Model Results
+
+Based on the results already present in the notebook:
+
+| Model | Accuracy |
+|---|---:|
+| SVC | 84.27% |
+| Gaussian Naive Bayes | 65.45% |
+| Decision Tree | 76.05% |
+| KNN | 71.52% |
+| Random Forest | 83.68% |
+| AdaBoost | 84.39% |
+| Gradient Boosting | **84.46%** |
+| Bagging | 81.26% |
+
+Gradient Boosting achieved the highest accuracy among the models evaluated in the current notebook.
+
+## 🛠️ Technologies Used
+
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone <YOUR-GITHUB-REPOSITORY-URL>
+cd Student-Depression-Prediction
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Open the notebook
+
+```bash
+jupyter notebook
+```
+
+Then open:
+
+`student_depression_prediction.ipynb`
+
+### 4. Dataset path
+
+Update the dataset-loading cell in the notebook so that it points to:
+
+```python
+pd.read_csv("Student_Depression_Dataset.csv")
+```
+
+The original notebook currently contains a local Windows path, so this change is required when running it from GitHub on another computer.
+
+## 👩‍💻 Author
+
+**Arpita Dongare**
+
+Student Depression Prediction — Machine Learning Project
