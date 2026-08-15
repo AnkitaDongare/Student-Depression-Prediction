@@ -65,4 +65,4 @@ Multiple machine learning algorithms were compared based on their accuracy and c
 
 The purpose of this project is to demonstrate how machine learning can be applied to identify potential depression-related patterns among students and provide an early prediction based on the available input factors.
 
-> **Note:** This project is intended for educational and research purposes and should not be considered a medical diagnosis tool.
+
